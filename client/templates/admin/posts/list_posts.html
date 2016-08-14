@@ -1,0 +1,33 @@
+<template name="list_posts">
+    <div class="container pt">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Blog Posts</h2>
+               <a href="/admin/posts/add" class="btn btn-primary btn-tiny">Create Post</a>
+                <br><br>
+                <table class="table table-striped">
+                    <tr>
+                        <th>Post Title</th>
+                        <th>Last Update</th>
+                        <th></th>
+                    </tr>
+                    <!-- Iterate the posts -->
+                    {{#each posts}}
+                        <tr>
+                            <td>{{title}}</td>
+                            <td>{{formatDate updatedAt}}</td>
+                            <td><a href="/admin/posts/{{_id}}/edit" class="btn btn-default btn-tiny">Edit</a> <button class="btn btn-default delete_post">Delete</button></td>
+                        </tr>
+                    {{else}}
+                        <tr>
+                            <td>There are no posts</td>
+                        </tr>
+                    {{/each}}
+                </table>
+            </div>
+
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</template>
