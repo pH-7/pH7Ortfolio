@@ -1,0 +1,18 @@
+node_modules/
+
+## OS files
+
+# Linux
+*~
+*.swp
+# KDE
+.directory
+
+# Windows
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Mac OS
+.DS_Store*
+._*
