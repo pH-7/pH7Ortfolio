@@ -1,0 +1,35 @@
+<template name="list_projects">
+    <div class="container pt">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Projects</h2>
+               <a href="/admin/projects/add" class="btn btn-primary btn-tiny">Create Project</a>
+                <br><br>
+                <table class="table table-striped">
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Date</th>
+                        <th>Type</th>
+                        <th></th>
+                    </tr>
+                    <!-- Iterate the projects -->
+                    {{#each projects}}
+                        <tr>
+                            <td>{{name}}</td>
+                            <td>{{projectDate}}</td>
+                            <td>{{type}}</td>
+                            <td><a href="/admin/projects/{{_id}}/edit" class="btn btn-default btn-tiny">Edit</a> <button class="btn btn-default delete_project">Delete</button></td>
+                        </tr>
+                    {{else}}
+                        <tr>
+                            <td>There are no projects</td>
+                        </tr>
+                    {{/each}}
+                </table>
+            </div>
+
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</template>
