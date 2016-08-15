@@ -7,9 +7,9 @@ Template.login.events({
             if (err) {
                 event.target.email.value = email;
                 event.target.password.value = password;
-                FlashMessages.setError(err.reason);
+                FlashMessages.sendError(err.reason);
             } else {
-                FlashMessages.setError('You are now logged in!');
+                FlashMessages.sendSuccess('You are logged in!');
                 Router.go('/admin/projects');
             }
         });
@@ -17,5 +17,19 @@ Template.login.events({
         event.target.password.value = '';
 
         return false;
-    })
-})
+    }
+});
+
+Template.layout.events({
+    'click .logout-user': function(event){
+        Meteor.logout(function(err){
+            if (err) {
+                FlashMessages.sendError(err.reason);
+            } else {
+                FlashMessages.sendSuccess('You are logged out by now!');
+                Router.go('/'); // Redirect to homepage
+            }
+        });
+        return false; // Prevent submit
+    }
+});
