@@ -33,3 +33,7 @@ Template.layout.events({
         return false; // Prevent submit
     }
 });
+
+Template.registerHelper('formatDate', function(date){
+	return moment(date).format('Do MMMM YYYY, h:mm:ss a');
+});
