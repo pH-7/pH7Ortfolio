@@ -9,7 +9,7 @@ Template.add_post.events({
             body: body
         });
 
-        FlashMessages.sendSucess('Post has been successfully added!');
+        FlashMessages.sendSuccess('Post has been successfully added!');
         Router.go('/admin/posts');
 
         // Prevent submit
