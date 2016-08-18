@@ -34,6 +34,12 @@ Template.layout.events({
     }
 });
 
+// Add Datepicker
+Template.layout.onRendered(function() {
+    this.$('.datetimepicker').datetimepicker();
+});
+
+// Add formatDate filter for nicer date render
 Template.registerHelper('formatDate', function(date){
 	return moment(date).format('Do MMMM YYYY, h:mm:ss a');
 });
