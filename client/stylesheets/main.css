@@ -151,7 +151,7 @@ a:after {
 #footer {
 	background-color: #2f2f2f;
 	padding-top: 50px;
-	padding-bottom: 50px; 
+	padding-bottom: 50px;
 }
 
 #footer p {
@@ -208,10 +208,10 @@ bt {
 
 /* ================== PORTFOLIO IMAGES HOVER EFFECT ================== */
 /* Effects also are controled by hover.zoom.js */
-.zoom { 
-    display:block; 
-    position:relative; 
-    overflow:hidden; 
+.zoom {
+    display:block;
+    position:relative;
+    overflow:hidden;
     background:transparent url(../img/loader.gif) no-repeat center;
 }
 
@@ -239,4 +239,8 @@ bt {
 .glyphicon {
 	font-size: 40px;
 	color: #1abc9c;
+}
+
+.edit-image {
+    width: 150px;
 }
