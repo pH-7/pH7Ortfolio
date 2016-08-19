@@ -7,6 +7,7 @@ Template.add_project.events({
         var projectDate = event.target.projectDate.value;
         var file = $('#projectImage').get(0).files[0];
 
+        // Create default project data object
         var projectData = {
             name: name,
             description: description,
@@ -16,22 +17,23 @@ Template.add_project.events({
         };
 
         if (file) {
-            fsFile = new FS.File(file);
-            projectImage.insert(fsFile, function(err, res) {
+            var fsFile = new FS.File(file);
+            ProjectImages.insert(fsFile, function(err, res) {
                 if (!err) {
                     var projectImage = '/cfs/files/pH7Ortfolio/' + res._id;
 
                     // Insert the data
-                    var imageField = {projectImage: projectImage};
-                    Projects.insert(projectData + imageField);
+                    projectData.projectImage = projectImage;
+                    Projects.insert(projectData);
                 }
             });
         } else {
             Projects.insert(projectData);
         }
-    }
 
-    FlashMessages.sendSuccess('Project successfully added!');
-    Router.go('/admin/projects');
-    
+        FlashMessages.sendSuccess('Project successfully added!');
+        Router.go('/admin/projects');
+
+        return false;
+    }
 });
