@@ -22,6 +22,11 @@ If you like Meteor.js like me, you can see others [I made here](https://github.c
 You can send an email at **pierrehenrysoria+github {{AT}} gmail {{D0T}} COM**
 
 
+## How pH7Ortfolio Looks Like?
+
+![Screenshot of the About page](ph7ortfolio-about-page.png)
+
+
 ## License
 
 [MIT License](http://opensource.org/licenses/mit-license.php)
