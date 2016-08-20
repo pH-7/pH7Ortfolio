@@ -6,7 +6,7 @@
                 <form class="edit_project_form" enctype="multipart/form-data">
                     <div class="form-group">
                         <label>Name</label>
-                        <input type="text" class="form-control" id="name" name="name" value="{{name}}">
+                        <input type="text" class="form-control" id="name" name="name" value="{{name}}" required>
                     </div>
                     <div class="form-group">
                         <label>Project Date</label>
@@ -14,20 +14,20 @@
                                <span class="input-group-addon">
                                    <i class="fa fa-calendar"></i>
                                </span>
-                               <input class="set-due-date form-control" name="projectDate" id="projectDate" type="date" />
+                               <input class="set-due-date form-control" name="projectDate" id="projectDate" type="date">
                            </div>
                    </div>
                     <div class="form-group">
                         <label>Client</label>
-                        <input type="text" class="form-control" id="client" name="client" value="{{client}}">
+                        <input type="text" class="form-control" id="client" name="client" value="{{client}}" required>
                     </div>
                     <div class="form-group">
                         <label>Type</label>
-                        <input type="text" class="form-control" id="type" name="type" value="{{type}}">
+                        <input type="text" class="form-control" id="type" name="type" value="{{type}}" required>
                     </div>
                     <div class="form-group">
                         <label>Description</label>
-                        <textarea class="form-control" id="description" name="description" rows="10" value="{{description}}"></textarea>
+                        <textarea class="form-control" id="description" name="description" rows="10" value="{{description}}" required></textarea>
                     </div>
                     <div class="form-group">
                         <label>Project Image</label>
@@ -37,7 +37,7 @@
                     </div>
 
                     <button type="submit" class="btn btn-primary">Submit</button>
-                    <a href="/admin/projects" class="btn btn-default">Go Back</a>
+                    <a href="{{ pathFor 'list_projects' }}" class="btn btn-default">Go Back</a>
                 </form>
             </div>
         </div>
