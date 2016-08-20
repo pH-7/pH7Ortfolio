@@ -43,3 +43,11 @@ Template.layout.onRendered(function() {
 Template.registerHelper('formatDate', function(date){
 	return moment(date).format('Do MMMM YYYY, h:mm:ss a');
 });
+
+// Create helpers to store some global tpl variables
+Template.registerHelper('siteName', function(){
+	return 'pH7Ortfolio';
+});
+Template.registerHelper('authorImage', function(){
+	return '/assets/img/user.png';
+});
