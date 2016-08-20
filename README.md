@@ -1,13 +1,13 @@
-# pH7Orfolio
+# pH7Ortfolio
 
-My **Simple Portfolio** website built with MeteorJs and Bootstrap.
+My **Simple Portfolio** website built with MeteorJs and Bootstrap frameworks.
 
 If you like Meteor.js like me, you can see others [I made here](https://github.com/AwesomeMobileApps) but there are not completely finished (sorry :smiley:).
 
 
 ## Requirement
 
-- Your server needs [Node.js](http://nodejs.org/) installed
+- Your server needs [Node.js](http://nodejs.org/) installed.
 
 
 ## Author
