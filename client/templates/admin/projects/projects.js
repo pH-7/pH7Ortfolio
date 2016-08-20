@@ -64,7 +64,7 @@ Template.edit_project.events({
                             type: type,
                             client: client,
                             projectDate: projectDate,
-                            productImage: productImage
+                            projectImage: projectImage
                         }
                     });
                 }
@@ -78,8 +78,7 @@ Template.edit_project.events({
                     description: description,
                     type: type,
                     client: client,
-                    projectDate: projectDate,
-                    productImage: productImage
+                    projectDate: projectDate
                 }
             });
         }
