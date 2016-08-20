@@ -55,5 +55,5 @@ Template.registerHelper('siteName', function(){
 	return 'pH7Ortfolio';
 });
 Template.registerHelper('authorImage', function(){
-	return '/assets/img/user.png';
+	return '/assets/img/ph.png';
 });
