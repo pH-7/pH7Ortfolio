@@ -34,6 +34,12 @@ Template.layout.events({
     }
 });
 
+Template.work.helpers({
+    projects: function() {
+        return Projects.find();
+    }
+});
+
 // Add Datepicker
 Template.layout.onRendered(function() {
     this.$('.datetimepicker').datetimepicker();
