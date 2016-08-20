@@ -16,7 +16,7 @@
                     {{#each projects}}
                         <tr>
                             <td>{{name}}</td>
-                            <td>{{projectDate}}</td>
+                            <td>{{formatDate projectDate}}</td>
                             <td>{{type}}</td>
                             <td><a href="/admin/projects/{{_id}}/edit" class="btn btn-default btn-tiny">Edit</a> <button class="btn btn-default delete_project">Delete</button></td>
                         </tr>
