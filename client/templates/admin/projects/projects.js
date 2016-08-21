@@ -1,3 +1,6 @@
+// Path where the project images are stored
+const IMG_FOLDER = '/cfs/files/ProjectImages/';
+
 Template.add_project.events({
     'submit .add_project_form': function() {
         var name = event.target.name.value;
@@ -20,7 +23,7 @@ Template.add_project.events({
             var fsFile = new FS.File(file);
             ProjectImages.insert(fsFile, function(err, res) {
                 if (!err) {
-                    var projectImage = '/cfs/files/pH7Ortfolio/' + res._id;
+                    var projectImage = IMG_FOLDER + res._id;
 
                     // Insert the data
                     projectData.projectImage = projectImage;
@@ -52,7 +55,7 @@ Template.edit_project.events({
             var fsFile = new FS.File(file);
             ProjectImages.insert(fsFile, function(err, res) {
                 if (!err) {
-                    var projectImage = '/cfs/files/pH7Ortfolio/' + res._id;
+                    var projectImage = IMG_FOLDER + res._id;
 
                     // Update the data
                     Projects.update({
