@@ -19,7 +19,7 @@ The easiest way to deploy and put your app live (to the galaxy, and beyond! :D),
 
 Then -> Meteor Account Services -> New Application.
 
-After, just go to your Meteor project through your console -> `meteor deploy <MY_APP_NAME>.meteor.com`, enter your Meteor login and your app will be on the Galaxy (live) and available on the URL, <MY_APP_NAME>.meteor.com
+After, just go to your Meteor project through your console -> `meteor deploy <MY_APP_NAME>.meteor.com`, enter your Meteor login and your app will be on the Galaxy (live) and available on the URL, `<MY_APP_NAME>.meteor.com`
 
 
 ## Author
