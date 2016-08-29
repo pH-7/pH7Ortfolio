@@ -13,7 +13,7 @@ If you like Meteor.js like me, you can see others [I made here](https://github.c
 
 
 ## Deployment
-### (generic tutorial, not for this app)
+### (generic tutorial, not only for this app)
 
 The easiest way to deploy and put your app live (to the galaxy, and beyond! :D), is by creating an account to [Meteor.com](https://www.meteor.com/sign-up), -> Galaxy App Hosting -> Signup for "Galaxy App Hosting" ($0.04/Container-Hour, not free anymore :( ).
 
